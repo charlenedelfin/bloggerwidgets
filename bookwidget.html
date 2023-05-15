@@ -1,25 +1,45 @@
-<!--- Books --->
+<!-- Books -->
+<!-- Title -->
+
 <h1 style="text-align: center; font-family: 'Roboto Condensed', sans-serif;">Books</h1>
-<div class="books">
-    <style>
-        .books {
-            display: flex;
-            flex-wrap: wrap;
-            flex-direction: row;
-            justify-content: space-around;
-        }
 
-        .books img {
-            border: 1px solid white;
-            padding: 15px;
-            height: 450px;
-            object-fit: contain;
-        }
-</style>
+<!-- Books container -->
 
-<!--- Book 1 --->
+<div id="books">
+    
+  <!-- Puts books in a flexbox -->
+  <!-- This is adapted from this article on May 15, 2023: https://w3bits.com/css-image-hover-zoom/ -->
+    
+  <style>
+    #books {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+
+    #shelf img {
+      border: 1px solid white;
+      padding: 15px;
+      height: 450px;
+      object-fit: contain;
+      filter: grayscale(100%);
+    }
+      
+    #shelf:hover img {
+        filter: grayscale(0);
+    }
+  </style>
+
+  <!--- Book 1 --->
+    
+  <div id="shelf">
     <img src="https://i.pinimg.com/564x/cb/d1/90/cbd190b10c2e8571dac117c2b7004839.jpg"/>
+  </div>
 
-<!--- Book 2 --->
+  <!--- Book 2 --->
+    
+  <div id="shelf">
     <img src="https://i.pinimg.com/564x/08/c2/aa/08c2aa671f5f6ebf40899a1cb50dbe6d.jpg"/>
+  </div>
 </div>
